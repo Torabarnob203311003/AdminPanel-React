@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 
-const users =createSlice ({
+const userSlice =createSlice ({
 
     name : "user",
     initialState : [],
@@ -14,6 +14,6 @@ const users =createSlice ({
     },
 });
 
-export default users;
+export default userSlice ;
 
 // slices creat atcion auto/ and also action type
