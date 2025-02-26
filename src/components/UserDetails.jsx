@@ -9,8 +9,8 @@ import DisplayUsers from "./DisplayUsers";
 const UserDetails = () => {
   const dispatch = useDispatch();
 
-  const addNewUser =(payload) =>{
-    console.log(payload );
+  const addNewUser = (payload) => {
+    console.log(payload);
     dispatch(addUser(payload))
 
 
@@ -20,10 +20,10 @@ const UserDetails = () => {
       <div className="content">
         <div className="admin-table">
           <div className="admin-subtitle">List of User Details</div>
-          <button className="btn add-btn" onClick={()=> addNewUser(fakeUserData())}>Add New Users</button>
+          <button className="btn add-btn" onClick={() => addNewUser(fakeUserData())}>Add New Users</button>
         </div>
         <ul>
-          <DisplayUsers/>
+          <DisplayUsers />
         </ul>
         <hr />
         <DeleteAllUser />

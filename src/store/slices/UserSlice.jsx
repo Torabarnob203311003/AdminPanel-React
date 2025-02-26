@@ -11,7 +11,12 @@ const userSlice =createSlice ({
             console.log(action.payload);
         },
 
-                    removeUser (state,action){},
+                    removeUser (state,action){
+
+                       // state.pop(action.payload);
+                             state.splice(action.payload,1)
+
+                    },
                     deleteUsers (state,action){},
 
 
@@ -19,6 +24,6 @@ const userSlice =createSlice ({
 });
 
 export default userSlice ;
-export const {addUser} = userSlice.actions;
+export const { addUser, removeUser } = userSlice.actions;
 
 // slices creat atcion auto/ and also action type
