@@ -1,0 +1,33 @@
+/* DisplayUsers.css */
+.display-container {
+
+    padding: 20px;
+    border-radius: 10px;
+    text-align:left;
+    font-size: 18px;
+    color: #333;
+  
+    max-width: 400px;
+    
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 15px;
+   
+  
+    text-align: left;
+}
+
+li p {
+    font-size: 5px;
+    color: #6b7280;
+    /* Tailwind gray-500 */
+    margin: 0;
+    font-weight: lighter;
+}
